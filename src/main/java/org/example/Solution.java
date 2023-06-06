@@ -13,7 +13,7 @@ public class Solution {
                 int count = 2;
 
                 if (dp.get(j).containsKey(difference)) {
-                    count = Math.max(dp.get(j).get(difference), count) + 1;
+                    count = dp.get(j).get(difference) + 1;
                     max = Math.max(max, count);
                 }
                 dp.get(i).put(difference, count);
